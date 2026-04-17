@@ -10,3 +10,12 @@
         <mapping class="ru.demo.sessia4.model.Student"/>
     </session-factory>
 </hibernate-configuration>
+
+CREATE TABLE students (
+    id SERIAL PRIMARY KEY,
+    specialty_code VARCHAR(6) NOT NULL,
+    last_name VARCHAR(20) NOT NULL,
+    first_name VARCHAR(20) NOT NULL,
+    middle_name VARCHAR(20),
+    birth_year INT NOT NULL
+);
